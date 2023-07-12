@@ -5,6 +5,7 @@
   <packaging>pom</packaging>
   <version>1.0.0</version>
   <modules>
+    <module>bulls-stock-gateway</module>
   </modules>
   <!--  自定义属性， 统一管理版本  -->
   <properties>
@@ -21,7 +22,6 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.8</version>
       <optional>true</optional>
     </dependency>
   </dependencies>
