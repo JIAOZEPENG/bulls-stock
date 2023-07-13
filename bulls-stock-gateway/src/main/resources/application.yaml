@@ -1,0 +1,14 @@
+server:
+  port: 10080
+spring:
+  application:
+    name: stock-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        service: ${spring.application.name}
+    gateway:
+      discovery:
+        locator:
+          enabled: true # 让gateway可以发现nacos中的微服务
