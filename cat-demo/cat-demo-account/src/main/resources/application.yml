@@ -1,0 +1,15 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: cat-demo-account
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.22.209:8848
+        service: ${spring.application.name}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: /*
